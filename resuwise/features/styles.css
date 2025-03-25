@@ -1,0 +1,85 @@
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for headings */
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    margin: 20px 0;
+    transition: transform 0.3s;
+    background: white; /* White background for feature items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for content */
+}
+
+.feature-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.feature-item h3 {
+    margin: 15px 0 10px;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.feature-item p {
+    color: #666; /* Lighter color for text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .feature-item {
+        width: 100%; /* Stack features on smaller screens */
+        margin: 10px 0;
+    }
+}
